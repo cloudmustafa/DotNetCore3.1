@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{B7D2B62F-B6D3-43E3-8242-28F8A3ABA6B8}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Weatherforecast/Dockerfile">
+    <Files>
+      <File FileName="Weatherforecast/Dockerfile" Line="14" Column="57" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Weatherforecast" expanded="True">
+            <Node name="docker-compose" expanded="True" />
+            <Node name="Weatherforecast" expanded="True">
+              <Node name="Dockerfile" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Weatherforecast FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.docker-compose PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

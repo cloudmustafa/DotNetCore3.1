@@ -1,0 +1,7 @@
+/Users/cloudmustafa/Projects/Dot-Net-Core/Weatherforecast/bin/Debug/appsettings.Development.json
+/Users/cloudmustafa/Projects/Dot-Net-Core/Weatherforecast/bin/Debug/appsettings.json
+/Users/cloudmustafa/Projects/Dot-Net-Core/Weatherforecast/bin/Debug/Weatherforecast.dll
+/Users/cloudmustafa/Projects/Dot-Net-Core/Weatherforecast/bin/Debug/Weatherforecast.pdb
+/Users/cloudmustafa/Projects/Dot-Net-Core/Weatherforecast/obj/Debug/docker-compose.dcprojAssemblyReference.cache
+/Users/cloudmustafa/Projects/Dot-Net-Core/Weatherforecast/obj/Debug/docker-compose.dcproj.CoreCompileInputs.cache
+/Users/cloudmustafa/Projects/Dot-Net-Core/Weatherforecast/obj/Debug/docker-compose.dcproj.CopyComplete

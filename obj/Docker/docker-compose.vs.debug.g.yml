@@ -1,0 +1,29 @@
+version: '3.4'
+
+services:
+  weatherforecast:
+    image: weatherforecast:dev
+    container_name: Weatherforecast
+    build:
+      target: base
+      labels:
+        com.microsoft.created-by: "visual-studio"
+        com.microsoft.visual-studio.project-name: "Weatherforecast"
+    environment:
+      - DOTNET_USE_POLLING_FILE_WATCHER=1
+      - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
+      - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages
+    volumes:
+      - /Users/cloudmustafa/Projects/Dot-Net-Core/Weatherforecast/Weatherforecast:/app
+      - /Users/cloudmustafa/Projects/Dot-Net-Core/Weatherforecast:/src
+      - /Users/cloudmustafa/vsdbg/vs2017u5:/remote_debugger:rw
+      - /Users/cloudmustafa/.nuget/packages/:/root/.nuget/packages:ro
+      - /usr/local/share/dotnet/sdk/NuGetFallbackFolder:/root/.nuget/fallbackpackages:ro
+
+    entrypoint: tail -f /dev/null
+    labels:
+      com.microsoft.visualstudio.debuggee.program: "dotnet"
+      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages  \"/app/bin/Debug/netcoreapp3.1/Weatherforecast.dll\""
+      com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
+      com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
+    tty: true
